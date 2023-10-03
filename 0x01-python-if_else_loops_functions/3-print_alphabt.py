@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 import string
+
+res = ""
+
 for letter in string.ascii_lowercase:
     if letter not in ['q', 'e']:
-        print(letter, end="")
+        res += letter
+print(res)
