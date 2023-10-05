@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("".join(chr(a) for a in range(65, 91)))
+import string
+print(string.ascii_uppercase)
