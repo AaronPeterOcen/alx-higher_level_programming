@@ -37,3 +37,13 @@ task 2
   Raises:
     IndexError: If x is greater than the length of my_list.
   """
+  task 3
+  """Divides 2 integers and prints the result.
+
+  Args:
+    a: An integer.
+    b: An integer.
+
+  Returns:
+    The value of the division, or None if an error occurred.
+  """
