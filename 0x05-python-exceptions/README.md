@@ -47,3 +47,19 @@ task 2
   Returns:
     The value of the division, or None if an error occurred.
   """
+  task 4
+  """Divides element by element 2 lists.
+
+  Args:
+    my_list_1: A list of any type of elements.
+    my_list_2: A list of any type of elements.
+    list_length: The length of the new list.
+
+  Returns:
+    A new list (length = list_length) with all divisions.
+  """
+  task 6 """Raises a name exception with a message.
+
+  Args:
+    message: The message of the exception.
+  """
