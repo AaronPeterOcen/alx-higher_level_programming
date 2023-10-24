@@ -5,15 +5,14 @@
 
 class Square:
     """
-    class Square is defined
-
+    Defines the class named Square
     Attributes:
     size : size of the square
     """
 
-    def __init__(self, size):
-        """
+    def __init__(self, __size):
+        """New square instance
         Args :
         size : square size
         """
-        self.size = size
+        self.__size = __size
