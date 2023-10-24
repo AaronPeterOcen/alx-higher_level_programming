@@ -4,7 +4,16 @@
 
 
 class Square:
-    """size attribute is added"""
+    """
+    class Square is defined
+
+    Attributes:
+    size : size of the square
+    """
 
     def __init__(self, size):
+        """
+        Args :
+        size : square size
+        """
         self.size = size
