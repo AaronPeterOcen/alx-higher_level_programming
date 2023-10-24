@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ define the MagicClass """
 
+import math
+
 
 class MagicClass:
     """
@@ -8,7 +10,8 @@ class MagicClass:
     radius : rad value
     """
 
-    def __init__(self, radius):
+    def __init__(self, radius=0):
+        self.__radius = 0
         if not isinstance(radius, (int, float)):
             raise TypeError("radius must be a number")
         self.__radius = radius
