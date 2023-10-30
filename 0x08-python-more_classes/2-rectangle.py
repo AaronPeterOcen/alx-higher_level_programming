@@ -18,9 +18,10 @@ class Rectangle:
         elif width < 0:
             raise ValueError("width must be >= 0")
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
+    @property
     def width(self):
         """Get/set the width of the Rectangle."""
         return self.__width
@@ -52,6 +53,6 @@ class Rectangle:
 
     def perimeter(self):
         """calculate the perimeter of the rectangle"""
-        if self.__width is 0 or self.__height is 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
