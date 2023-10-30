@@ -23,6 +23,7 @@ class Rectangle:
 
     @property
     def width(self):
+        """Get/set the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -35,6 +36,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """Getter for height"""
         return self.__width
 
     @height.setter
@@ -44,10 +46,6 @@ class Rectangle:
         elif value < 0:
             raise ValueError("width must be >= 0")
         self.__height = value
-
-    @property
-    def width(self):
-        return self.__width
 
     def area(self):
         """calculate the area of the rectangle object"""
@@ -60,6 +58,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        """Return the printable representation of the Rectangle."""
         if self.width == 0 or self.height == 0:
             return ""
         return "\n".join(["#" * self.__width] * self.__height)
