@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#task 0
+# task 0
 # class Base():
 #     """ My base class """
 
@@ -33,7 +33,7 @@
 # u = User()
 # print(u.id)
 
-#task 8
+# task 8
 # class Base():
 #     """ My base class """
 
@@ -52,8 +52,9 @@
 # u = User()
 # print(u.id)
 
-class Base():
-    """ My base class """
+
+class Base:
+    """My base class"""
 
     __nb_instances = 0
 
@@ -61,9 +62,12 @@ class Base():
         Base.__nb_instances += 1
         self.id = Base.__nb_instances
 
+
 class User(Base):
-    """ My User class """
+    """My User class"""
+
     pass
+
 
 b = Base()
 u = User()
