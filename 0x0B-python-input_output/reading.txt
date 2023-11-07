@@ -1,0 +1,21 @@
+open() returns a file object,
+and is most commonly used with two positional arguments and one keyword argument:
+open(filename, mode, encoding=None)
+
+
+Python Open File
+You can open file in Python using the built-in function open().
+Syntax:
+
+open(filename, access_mode)
+
+
+Python Read Data from a File
+Let's now come to the real and fun part: operating on the file.
+
+Python provides us with various functions to read from a file. One way to read individual lines from a file without using any function is by using the â€œforâ€ loop.
+Code:
+
+>>> f = open("myfile.txt")
+>>> for line in f:
+        print(line)
