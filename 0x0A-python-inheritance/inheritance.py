@@ -1,6 +1,3 @@
-##0756968024
-
-
 class Animal:
     def __init__(self, birthType="?", appearence="?", blood="?"):
         self.birthType = birthType
