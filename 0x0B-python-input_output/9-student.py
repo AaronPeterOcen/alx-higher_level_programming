@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ new class student"""
-import json
 
 
 class Student:
@@ -12,6 +11,6 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, my_list):
+    def to_json(self):
         """new method to_json"""
-        return json.dumps(my_list)
+        return self.__dict__
