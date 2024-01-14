@@ -3,6 +3,7 @@
     wrting the first class base
 """
 import json
+import csv
 
 
 class Base:
@@ -49,3 +50,36 @@ class Base:
         if json_string is None:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        load from file
+        """
+        try:
+            with open(cls.__name__ + ".json", "r") as f:
+                return [cls.create(**d) for d in cls.from_json_string(f.read())]
+        except:
+            return []
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        create method
+        """
+        from models.rectangle import Rectangle
+        from models.square import Square
+
+        #     # if cls.__name__ == "Rectangle":
+        #     #     mod = Rectangle(1, 1)
+        #     # elif cls.__name__ == "Square":
+        #     #     mod = Square(1)
+        #     # mod.update(**dictionary)
+        #     # return mod
+
+        if cls.__name__ == "Rectangle":
+            return Rectangle(1, 1, 0, 0, **dictionary)
+        elif cls.__name__ == "Square":
+            return Square(1, 0, 0, **dictionary)
+        else:
+            return None
