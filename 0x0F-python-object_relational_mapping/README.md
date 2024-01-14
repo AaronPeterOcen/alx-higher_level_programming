@@ -1,12 +1,5 @@
-You have a captain's log due before 2024-01-14 (in about 16 hours)! Log it now!
 0x0F. Python - Object-relational mapping
 PythonOOPSQLMySQLORMSQLAlchemy
-
-    By: Guillaume
-    Weight: 1
-    Project will start Jan 11, 2024 6:00 AM, must end by Jan 15, 2024 6:00 AM
-    Checker was released at Jan 12, 2024 6:00 AM
-    An auto review will be launched at the deadline
 
 Before you start…
 
