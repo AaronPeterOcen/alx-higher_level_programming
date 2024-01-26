@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-fetches alx url
+fetches alx url from  https://alx-intranet.hbtn.io/status
 """
 import urllib.request
 
@@ -11,7 +11,9 @@ import urllib.request
 # print(response.read)
 
 with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as response:
-    body = response.read().decode("utf-8")
+    body = response.read()
 
-    for line in body.splitlines():
-        print("\t- {}".format(line))
+    print("Body response:")
+    print("\t- type: {}".format(type(body)))
+    print("\t- content: {}".format(body))
+    print("\t- utf8 content: {}".format(body.decode("utf-8")))
