@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# fetches alx url
 import urllib.request
 # response = urllib.request.urlopen("https://unsplash.com/s/photos/ford-bronco")
 # print(response)
